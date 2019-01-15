@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
+
     .form-group{
      margin-bottom: 15px;
     }
@@ -85,6 +86,12 @@
       border-radius: 30px;
     }
 
+    @media screen and (max-device-width: 750px) {
+    h1 {
+      font-size: 350%;
+    }
+  }
+
     </style>
 </head>
 
@@ -92,8 +99,10 @@
 
   <div class="container">
     <div class="row">
-      <div class="col text-center">
-        <div><h1>Регистрация</h1></div>
+      <div class="col md-12 sm-6 text-center">
+        <div>
+          <h1>Регистрация</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -153,13 +162,12 @@
 
   <script type="text/javascript">
     var url = window.location.href;
-    if(url.indexOf('#') != -1)
+    if (url.indexOf('#') != -1)
       result = confirm('Данные успешно отправлены! Желаете снова зарегистрировать мероприятие?');
 
     if (result == false) {
       document.location.href = "greeting.html"
     };
-
   </script>
 
 </body>
